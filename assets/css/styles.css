@@ -1,0 +1,144 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fff; /* Set background color to white */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #fff; /* Same background as body */
+    padding: 20px 0;
+    position: relative;
+    border: none;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 0;
+    flex: 1;
+}
+
+.image-and-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-image {
+    flex: 1;
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px 20px 20px 40px;
+    box-sizing: border-box;
+}
+
+.text-content h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fff; /* Same background as body */
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    border: none;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-and-text {
+        flex-direction: column;
+        text-align: center;
+        gap: 0;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .text-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+}
