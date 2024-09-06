@@ -142,3 +142,66 @@ footer p {
         font-size: 14px;
     }
 }
+/* Projects Section */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Add spacing between projects */
+    margin-top: 40px;
+}
+
+.project {
+    display: flex;
+    gap: 30px; /* Increased space between image and project details */
+    align-items: center;
+}
+
+.project-image {
+    width: 400px; /* Increase width to make the image bigger */
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-info h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.project-info a {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.project-info a:hover {
+    color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column; /* Stack image and text on smaller screens */
+        text-align: center;
+    }
+
+    .project-image {
+        width: 100%; /* Full-width image on mobile */
+    }
+}
